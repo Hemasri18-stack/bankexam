@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bank Exam Prep Manager</title>
+<link rel="stylesheet" href="/css/style.css">
+<script src="/js/chart.js"></script></head>
+<body>
+<div id="app">
+
+  <aside class="sidebar">
+    <div class="brand">
+      <span class="brand-icon">🏦</span>
+      <div>
+        <div class="brand-title">Bank Exam Prep</div>
+        <div class="brand-sub">2-Year Planner</div>
+      </div>
+    </div>
+    <nav class="nav">
+      <button class="nav-item active" data-view="dashboard">📊 Dashboard</button>
+      <button class="nav-item" data-view="studyplan">🗓️ Study Plan</button>
+      <button class="nav-item" data-view="syllabus">📚 Syllabus</button>
+      <button class="nav-item" data-view="notes">📝 Notes</button>
+      <button class="nav-item" data-view="tasks">✅ Tasks</button>
+      <button class="nav-item" data-view="studytracker">⏱️ Study Tracker</button>
+      <button class="nav-item" data-view="tests">🧪 Tests</button>
+      <button class="nav-item" data-view="weaktopics">🎯 Weak Topics</button>
+      <button class="nav-item" data-view="errorbook">❌ Error Book</button>
+      <button class="nav-item" data-view="revision">🔁 Revision</button>
+      <button class="nav-item" data-view="statistics">📈 Statistics</button>
+      <button class="nav-item" data-view="currentaffairs">🌐 Current Affairs</button>
+      <button class="nav-item" data-view="reports">🧾 Reports</button>
+      <button class="nav-item" data-view="settings">⚙️ Settings</button>
+    </nav>
+    <div class="mode-toggle">
+      <span>Mode</span>
+      <select id="modeSelect">
+        <option value="Preparation">Preparation</option>
+        <option value="Exam">Exam</option>
+      </select>
+    </div>
+  </aside>
+
+  <main class="content">
+    <header class="topbar">
+      <div class="search-box">
+        <input id="globalSearch" type="text" placeholder="Search notes, topics, tasks, tests, mistakes...">
+        <div id="searchResults" class="search-results hidden"></div>
+      </div>
+      <div class="topbar-date" id="topbarDate"></div>
+    </header>
+
+    <section id="view-dashboard" class="view active"></section>
+    <section id="view-studyplan" class="view"></section>
+    <section id="view-syllabus" class="view"></section>
+    <section id="view-notes" class="view"></section>
+    <section id="view-tasks" class="view"></section>
+    <section id="view-studytracker" class="view"></section>
+    <section id="view-tests" class="view"></section>
+    <section id="view-weaktopics" class="view"></section>
+    <section id="view-errorbook" class="view"></section>
+    <section id="view-revision" class="view"></section>
+    <section id="view-statistics" class="view"></section>
+    <section id="view-currentaffairs" class="view"></section>
+    <section id="view-reports" class="view"></section>
+    <section id="view-settings" class="view"></section>
+  </main>
+</div>
+
+<div id="modalRoot"></div>
+<div id="toastRoot"></div>
+
+<script src="/js/app.js"></script>
+</body>
+</html>
